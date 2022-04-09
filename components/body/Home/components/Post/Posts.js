@@ -19,7 +19,7 @@ const Posts = () => {
   return (
     <div className={Style.container}>
       {PostsArray.map(({ url }, index) => (
-        <Post Image={url} PosterImage={url} Index={index} />
+        <Post Image={url} PosterImage={url} Index={index} key={index} />
       ))}
     </div>
   );
