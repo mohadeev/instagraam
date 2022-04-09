@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 27%;
+}
+.container > svg {
+  cursor: pointer;
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+  line-height: 18px;
+}
+.container > span > svg {
+  cursor: pointer;
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+  line-height: 18px;
+}

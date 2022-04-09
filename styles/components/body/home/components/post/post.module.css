@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "mainFonts";
+  src: url("../../../../../../public/fonts/Demo_Fonts/Helvetica-Neue-Font/Helvetica Neue W01 66 Medium It/Helvetica Neue W01 66 Medium It.ttf");
+}
+.container {
+  /* padding: 0 16px; */
+  height: auto;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 2px;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.poster_details {
+  width: 100%;
+  height: 70px;
+  border-bottom: 1px solid #eaeaea;
+  border-radius: 2px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+.poster_details > svg {
+  cursor: pointer;
+}
+.user_image {
+  background-size: cover;
+  background-position: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+.poster_image_and_name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 10px;
+  cursor: pointer;
+}
+.image {
+  width: 100%;
+  min-height: 430px;
+}
+.username {
+  font-family: mainFonts;
+  cursor: pointer;
+}

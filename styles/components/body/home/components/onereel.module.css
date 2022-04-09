@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "mainFonts";
+  src: url("../../../../../public/fonts/Demo_Fonts/Helvetica-Neue-Font/Helvetica Neue W01 66 Medium It/Helvetica Neue W01 66 Medium It.ttf");
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap : 12px;
+  margin: 0;
+    cursor: pointer;
+
+}
+.container {
+  width: 66px;
+  height: 66px;
+  background-image: url("/images/insta-background.jpg");
+  background-size: cover;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+.second_container {
+  background-color: #fff;
+  border: 2px solid #fff;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  padding: 0;
+  margin: auto;
+  background-size: cover;
+  background-position: center;
+}
+.p {
+  padding: 0;
+  margin: 0;
+  font-family: mainFonts;
+  font-size: 11px;
+  font-weight: 100;
+  font-style: normal;
+  letter-spacing  : 0.12px;
+  
+  color: #262626;
+}

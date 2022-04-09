@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "myFirstFont";
+  src: url("../../../../public/fonts/Demo_Fonts/Billabong.ttf");
+}
+@font-face {
+  font-family: "myFirstFont";
+  src: url("../../../../public/fonts/FontsFree-Net-DreamFlourish-DOKPR.ttf");
+}
+
+@font-face {
+  font-family: "mysecondtFont";
+  src: url("../../../../public/fonts/Demo_Fonts/Helvetica-Neue-Font/Helvetica Neue UltraLight/Helvetica Neue UltraLight.ttf");
+}
+
+.conatainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 64%;
+  height: 100%;
+}
+.logo {
+  font-family: myFirstFont;
+  font-size: 35px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+.form_search {
+  width: 43.8%;
+  height: auto;
+  background-color: #efefef;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+  border: 1px solid #eaeaea;
+  color: #8e8e8e;
+}
+.search_input {
+  width: 100%;
+  border: none;
+  font-family: mysecondtFont;
+  font-weight:600;
+  font-size: 14px;
+  letter-spacing: 2px;
+  padding: 9px 0;
+  padding-left: 10px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.form_search > svg {
+  cursor: pointer;
+  font-size: 17.5px;
+}
+.search_input:focus {
+  border: none;
+  outline: none;
+}

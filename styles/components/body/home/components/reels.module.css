@@ -1,0 +1,17 @@
+.container {
+  width: 614px;
+}
+.reels_container {
+  padding: 0 16px;
+  width: 614px;
+  background-color: #fff;
+  height: 119px;
+  border-radius: 5px;
+  border: 1px solid #eaeaea;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  column-gap: 15px;
+}
