@@ -1,5 +1,6 @@
 @font-face {
   font-family: "mainFonts";
+
   src: url("../../../../../../public/fonts/Demo_Fonts/Helvetica-Neue-Font/Helvetica Neue W01 66 Medium It/Helvetica Neue W01 66 Medium It.ttf");
 }
 .container {
@@ -16,6 +17,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 500px;
 }
 .poster_details {
   width: 100%;
@@ -49,8 +51,19 @@
 .image {
   width: 100%;
   min-height: 430px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .username {
-  font-family: mainFonts;
-  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #262626;
+  padding: 0;
+  margin: 0;
+}
+
+.detailes {
+  width: 100%;
 }

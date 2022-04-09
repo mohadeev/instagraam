@@ -1,5 +1,15 @@
-.main{
-    width : 67%;
-    /* background-color : red; */
-    height : auto;
+.main {
+  /* padding-top: 25px; */
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  /* background-color: red; */
+  justify-content: space-between;
+}
+/* //239 */
+.second_container {
+  width: 293px;
+  /* height: 1000px; */
+  /* background-color: red; */
 }

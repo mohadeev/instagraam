@@ -1,0 +1,47 @@
+.container {
+  width: 100%;
+  min-height: 53px;
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 15px;
+  margin-top: 15px;
+}
+.container > svg {
+  /* width: 40px; */
+  margin-right: 10px;
+  cursor: pointer;
+}
+.textarea {
+  resize: none;
+  overflow: hidden;
+  width: 518.828px;
+  border: none;
+  letter-spacing: 2px;
+  height: 18px;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 14px;
+  letter-spacing: 0.12px;
+  line-height: 18px;
+  color: #6e6e6e;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+.textarea:focus {
+  border: none;
+  outline: none;
+}
+.post {
+  cursor: pointer;
+  letter-spacing: 2px;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.12px;
+  line-height: 18px;
+  color: #b2dffc;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}

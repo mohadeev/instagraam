@@ -18,9 +18,17 @@ const Posts = () => {
   }, []);
   return (
     <div className={Style.container}>
-      {PostsArray.map(({ url }, index) => (
+      {/* {PostsArray.map(({ url }, index) => (
         <Post Image={url} PosterImage={url} Index={index} key={index} />
-      ))}
+      ))} */}
+      <Post
+        Image={"./images/users/user-1-image.jpg"}
+        PosterImage={"./images/users/user-1-image.jpg"}
+      />
+      <Post
+        Image={"./images/users/user-1-image.jpg"}
+        PosterImage={"./images/users/user-1-image.jpg"}
+      />
     </div>
   );
 };
