@@ -6,7 +6,7 @@
   margin: 0;
   
 }
-#myDIV {
+/* #myDIV {
   width: 300px;
   height: 200px;
   background: red;
@@ -16,4 +16,4 @@
 @keyframes mymove {
   from {background-color: #DCE6F1;}
   to {background-color: #eaeaea;}
-}
+} */
