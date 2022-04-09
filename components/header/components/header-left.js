@@ -15,8 +15,8 @@ const PushToHome=()=>{
       </p>
       <form className={Style.form_search}>
         <svg
-          aria-label="Search"
-          class="_8-yf5 "
+          ariaLabel="Search"
+          className="_8-yf5 "
           color="#8e8e8e"
           fill="#8e8e8e"
           height="16"
@@ -28,16 +28,16 @@ const PushToHome=()=>{
             d="M19 10.5A8.5 8.5 0 1110.5 2a8.5 8.5 0 018.5 8.5z"
             fill="none"
             stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
           ></path>
           <line
             fill="none"
             stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
             x1="16.511"
             x2="22"
             y1="16.511"

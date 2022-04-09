@@ -1,7 +1,7 @@
 export const HeartFill = (
   <svg
     aria-label="Activity Feed"
-    class="_8-yf5 "
+    className="_8-yf5 "
     color="#262626"
     fill="#262626"
     height="24"
@@ -15,7 +15,7 @@ export const HeartFill = (
 export const HeartOutline = (
   <svg
     aria-label="Activity Feed"
-    class="_8-yf5 "
+    className="_8-yf5 "
     color="#262626"
     fill="#262626"
     height="24"
@@ -29,7 +29,7 @@ export const HeartOutline = (
 export const CommentsOutLine = (
   <svg
     aria-label="Comment"
-    class="_8-yf5 "
+    className="_8-yf5 "
     color="#262626"
     fill="#262626"
     height="24"
@@ -41,15 +41,15 @@ export const CommentsOutLine = (
       d="M20.656 17.008a9.993 9.993 0 10-3.59 3.615L22 22z"
       fill="none"
       stroke="currentColor"
-      stroke-linejoin="round"
-      stroke-width="2"
+      strokeLinejoin="round"
+      strokeWidth="2"
     ></path>
   </svg>
 );
 export const SendOutLine = (
   <svg
     aria-label="Direct"
-    class="_8-yf5 "
+    className="_8-yf5 "
     color="#262626"
     fill="#262626"
     height="24"
@@ -60,8 +60,8 @@ export const SendOutLine = (
     <line
       fill="none"
       stroke="currentColor"
-      stroke-linejoin="round"
-      stroke-width="2"
+      strokeLinejoin="round"
+      strokeWidth="2"
       x1="22"
       x2="9.218"
       y1="3"
@@ -71,8 +71,8 @@ export const SendOutLine = (
       fill="none"
       points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334"
       stroke="currentColor"
-      stroke-linejoin="round"
-      stroke-width="2"
+      strokeLinejoin="round"
+      strokeWidth="2"
     ></polygon>
   </svg>
 );
@@ -80,7 +80,7 @@ export const SendOutLine = (
 export const BookPage = (
   <svg
     aria-label="Save"
-    class="_8-yf5 "
+    className="_8-yf5 "
     color="#262626"
     fill="#262626"
     height="24"
@@ -92,9 +92,9 @@ export const BookPage = (
       fill="none"
       points="20 21 12 13.44 4 21 4 3 20 3 20 21"
       stroke="currentColor"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
     ></polygon>
   </svg>
 );
@@ -102,7 +102,7 @@ export const BookPage = (
 export const Emojy = (
   <svg
     aria-label="Emoji"
-    class="_8-yf5 "
+    className="_8-yf5 "
     color="#262626"
     fill="#262626"
     height="24"
@@ -118,7 +118,7 @@ export const Emojy = (
 export const ArrowUp = (
   <svg
     aria-label="Down Chevron Icon"
-    class="_8-yf5 "
+    className="_8-yf5 "
     color="#262626"
     fill="#262626"
     height="20"
@@ -133,7 +133,7 @@ export const ArrowUp = (
 export const CreateMessage = (
   <svg
     aria-label="New Message"
-    class="_8-yf5 "
+    className="_8-yf5 "
     color="#262626"
     fill="#262626"
     height="24"
@@ -145,24 +145,24 @@ export const CreateMessage = (
       d="M12.202 3.203H5.25a3 3 0 00-3 3V18.75a3 3 0 003 3h12.547a3 3 0 003-3v-6.952"
       fill="none"
       stroke="currentColor"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
     ></path>
     <path
       d="M10.002 17.226H6.774v-3.228L18.607 2.165a1.417 1.417 0 012.004 0l1.224 1.225a1.417 1.417 0 010 2.004z"
       fill="none"
       stroke="currentColor"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
     ></path>
     <line
       fill="none"
       stroke="currentColor"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
       x1="16.848"
       x2="20.076"
       y1="3.924"
