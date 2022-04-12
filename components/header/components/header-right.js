@@ -1,17 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Style from "../../../styles/components/header/components/header-right.module.css";
-import { BsHouseFill } from "@react-icons/all-files/bs/BsHouseFill";
-import { BsHouse } from "@react-icons/all-files/bs/BsHouse";
-import { BsPlusSquare } from "@react-icons/all-files/bs/BsPlusSquare";
-import { BsPlusSquareFill } from "@react-icons/all-files/bs/BsPlusSquareFill";
-import { FaRegCompass } from "@react-icons/all-files/fa/FaRegCompass";
-import { FaCompass } from "@react-icons/all-files/fa/FaCompass";
-import { FaRegHeart } from "@react-icons/all-files/fa/FaRegHeart";
-import { FaHeart } from "@react-icons/all-files/fa/FaHeart";
-import { SendOutLine, SendFill } from "./custtomicons.js";
-import { RiUser6Fill } from "@react-icons/all-files/ri/RiUser6Fill";
+import { AddPostReducer } from "../../../redux/reducers/AddPostReducer";
+import { useDispatch } from "react-redux";
 import { useRouter } from "next/router";
 const HeaderRight = () => {
+  const dispatch = useDispatch();
   const Router = useRouter();
   const { asPath, pathname } = useRouter();
   const Pth = useState(asPath);
@@ -37,6 +30,7 @@ const HeaderRight = () => {
   };
   const PlusSquareFunc = () => {
     setArrayIcons("BsPlusSquareFill");
+    dispatch(AddPostReducer());;
   };
   const RegCompassFunc = () => {
     setArrayIcons("FaRegCompass");

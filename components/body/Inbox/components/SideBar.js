@@ -41,7 +41,11 @@ const SideBar = () => {
           <p style={{ color: StyleGeneral.color }}>GENERAL</p>
         </div>
       </div>
-      <UserMessage />
+      <div className={Style.users_container}>
+        {" "}
+        <UserMessage /> <UserMessage /> <UserMessage /> <UserMessage />{" "}
+        <UserMessage /> <UserMessage /> <UserMessage />
+      </div>
     </div>
   );
 };

@@ -1,10 +1,11 @@
 .container {
-  /* margin-top: 52px; */
+  margin: 8px 15px;
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
+
   /* column-gap: 15px; */
 }
 .user_image {
@@ -14,6 +15,7 @@
   background-size: cover;
   background-position: center;
   cursor: pointer;
+  background-color: red;
   background-image: url("../../../../../public/images/user_background.jpg");
 }
 .user_text_container {
@@ -28,7 +30,7 @@
 }
 .user_name {
   font-size: 14px;
-  font-weight: 600;
+  /* font-weight: 600; */
   line-height: 18px;
   color: #262626;
   padding: 0;

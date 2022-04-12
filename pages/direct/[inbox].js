@@ -2,7 +2,11 @@ import React from "react";
 import Inbox from "./../../components/body/Inbox/Index";
 
 const InboxPage = () => {
-  return <Inbox />;
+  const DivStyle = {
+    width : "100%",
+    height :  "735px"
+  }
+  return (<div style={DivStyle}><Inbox /></div>)
 };
 
 export default InboxPage;

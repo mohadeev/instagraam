@@ -1,9 +1,11 @@
 .container {
   width: 100%;
-  background-color: #fafafa;
+  /* background-color: red; */
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: auto;
+  /* position: absolute; */
 }
 .main {
   min-height: 100vh;

@@ -14,7 +14,9 @@
     "next": "12.1.4",
     "react": "18.0.0",
     "react-dom": "18.0.0",
-    "react-redux": "^7.2.8"
+    "react-redux": "^7.2.8",
+    "socket.io": "^4.4.1",
+    "with-redux-wrapper": "^1.0.0"
   },
   "devDependencies": {
     "eslint": "8.12.0",

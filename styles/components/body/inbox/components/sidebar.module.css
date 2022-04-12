@@ -1,6 +1,6 @@
 .container {
   border-right: 1px solid #eaeaea;
-  min-height: 80vh;
+  height: 100%;
   width: 350px;
   display: flex;
   flex-direction: column;
@@ -97,4 +97,13 @@
   /* letter-spacing: 0.12px; */
   line-height: 18px;
   color: #bdbdbd;
+}
+
+/* --------------------------------------users_container--------------------------------------- */
+.users_container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }

@@ -6,13 +6,12 @@ const Posts = () => {
   const [PostsArray, setPostsArray] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
-      await fetch("https://jsonplaceholder.typicode.com/photos").then(
-        async (res) => {
-          const data = await res.json();
-          setPostsArray(data);
-          console.log(data);
-        }
-      );
+      // await fetch("https://jsonplaceholder.typicode.com/photos").then(
+      //   async (res) => {
+      //     const data = await res.json();
+      //     setPostsArray(data);
+      //   }
+      // );
     };
     fetchData();
   }, []);
@@ -21,6 +20,14 @@ const Posts = () => {
       {/* {PostsArray.map(({ url }, index) => (
         <Post Image={url} PosterImage={url} Index={index} key={index} />
       ))} */}
+      <Post
+        Image={"./images/users/user-1-image.jpg"}
+        PosterImage={"./images/users/user-1-image.jpg"}
+      />
+      <Post
+        Image={"./images/users/user-1-image.jpg"}
+        PosterImage={"./images/users/user-1-image.jpg"}
+      />
       <Post
         Image={"./images/users/user-1-image.jpg"}
         PosterImage={"./images/users/user-1-image.jpg"}
