@@ -32,10 +32,14 @@ const Discard = () => {
         <div className={Style.discard_text}>
           <p className={Style.p_discard_post}>Discard post?</p>
           <p className={Style.second_p_discard_post}>
-            If you leave, your edits won't be saved.
+            If you leave, your edits won&apos;t be saved.
           </p>
         </div>
-        <div onClick={HandelDiscard} ref={DescardDiv} className={Style.discard_word_container}>
+        <div
+          onClick={HandelDiscard}
+          ref={DescardDiv}
+          className={Style.discard_word_container}
+        >
           <p className={Style.discard_word}>Discard</p>
         </div>
         <div

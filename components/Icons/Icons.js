@@ -1,6 +1,6 @@
 export const HeartFill = (
   <svg
-    aria-label="Activity Feed"
+    ariaLabel="Activity Feed"
     className="_8-yf5 "
     color="#262626"
     fill="#262626"
@@ -14,7 +14,7 @@ export const HeartFill = (
 );
 export const HeartOutline = (
   <svg
-    aria-label="Activity Feed"
+    ariaLabel="Activity Feed"
     className="_8-yf5 "
     color="#262626"
     fill="#262626"
@@ -28,7 +28,7 @@ export const HeartOutline = (
 );
 export const CommentsOutLine = (
   <svg
-    aria-label="Comment"
+    ariaLabel="Comment"
     className="_8-yf5 "
     color="#262626"
     fill="#262626"
@@ -48,7 +48,7 @@ export const CommentsOutLine = (
 );
 export const SendOutLine = (
   <svg
-    aria-label="Direct"
+    ariaLabel="Direct"
     className="_8-yf5 "
     color="#262626"
     fill="#262626"
@@ -79,7 +79,7 @@ export const SendOutLine = (
 
 export const BookPage = (
   <svg
-    aria-label="Save"
+    ariaLabel="Save"
     className="_8-yf5 "
     color="#262626"
     fill="#262626"
@@ -101,7 +101,7 @@ export const BookPage = (
 
 export const Emojy = (
   <svg
-    aria-label="Emoji"
+    ariaLabel="Emoji"
     className="_8-yf5 "
     color="#262626"
     fill="#262626"
@@ -115,7 +115,7 @@ export const Emojy = (
 );
 export const ArrowUp = (
   <svg
-    aria-label="Down Chevron Icon"
+    ariaLabel="Down Chevron Icon"
     className="_8-yf5 "
     color="#262626"
     fill="#262626"
@@ -130,7 +130,7 @@ export const ArrowUp = (
 
 export const CreateMessage = (
   <svg
-    aria-label="New Message"
+    ariaLabel="New Message"
     className="_8-yf5 "
     color="#262626"
     fill="#262626"
@@ -171,8 +171,8 @@ export const CreateMessage = (
 
 export const InfoOutLine = (
   <svg
-    aria-label="View Thread Details"
-    class="_8-yf5 "
+    ariaLabel="View Thread Details"
+    className="_8-yf5 "
     color="#262626"
     fill="#262626"
     height="24"
@@ -186,17 +186,17 @@ export const InfoOutLine = (
       fill="none"
       r="10.5"
       stroke="currentColor"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
     ></circle>
     <circle cx="11.819" cy="7.709" r="1.25"></circle>
     <line
       fill="none"
       stroke="currentColor"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
       x1="10.569"
       x2="13.432"
       y1="16.777"
@@ -206,17 +206,17 @@ export const InfoOutLine = (
       fill="none"
       points="10.569 11.05 12 11.05 12 16.777"
       stroke="currentColor"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
     ></polyline>
   </svg>
 );
 
 export const InfoFill = (
   <svg
-    aria-label="Navigate back to chat from thread details"
-    class="_8-yf5 "
+    ariaLabel="Navigate back to chat from thread details"
+    className="_8-yf5 "
     color="#262626"
     fill="#262626"
     height="24"
@@ -229,8 +229,8 @@ export const InfoFill = (
 );
 export const DeleteIcon = (
   <svg
-    aria-label="Close"
-    class="_8-yf5 "
+    ariaLabel="Close"
+    className="_8-yf5 "
     color="#ffffff"
     fill="#ffffff"
     height="24"
@@ -242,16 +242,16 @@ export const DeleteIcon = (
       fill="none"
       points="20.643 3.357 12 12 3.353 20.647"
       stroke="currentColor"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="3"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="3"
     ></polyline>
     <line
       fill="none"
       stroke="currentColor"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="3"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="3"
       x1="20.649"
       x2="3.354"
       y1="20.649"
@@ -261,8 +261,8 @@ export const DeleteIcon = (
 );
 export const ImageIcon = (
   <svg
-    aria-label="Add Photo or Video"
-    class="_8-yf5 "
+    ariaLabel="Add Photo or Video"
+    className="_8-yf5 "
     color="#262626"
     fill="#262626"
     height="24"
@@ -278,23 +278,23 @@ export const ImageIcon = (
       d="M2 18.605l3.901-3.9a.908.908 0 011.284 0l2.807 2.806a.908.908 0 001.283 0l5.534-5.534a.908.908 0 011.283 0l3.905 3.905"
       fill="none"
       stroke="currentColor"
-      stroke-linejoin="round"
-      stroke-width="2"
+      strokeLinejoin="round"
+      strokeWidth="2"
     ></path>
     <path
       d="M18.44 2.004A3.56 3.56 0 0122 5.564h0v12.873a3.56 3.56 0 01-3.56 3.56H5.568a3.56 3.56 0 01-3.56-3.56V5.563a3.56 3.56 0 013.56-3.56z"
       fill="none"
       stroke="currentColor"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
     ></path>
   </svg>
 );
 export const MediaIcon = (
   <svg
-    aria-label="Icon to represent media such as images or videos"
-    class="_8-yf5 "
+    ariaLabel="Icon to represent media such as images or videos"
+    className="_8-yf5 "
     color="#262626"
     fill="#262626"
     height="77"
@@ -318,8 +318,8 @@ export const MediaIcon = (
 );
 export const ArrowBack = (
   <svg
-    aria-label="Back"
-    class="_8-yf5 "
+    ariaLabel="Back"
+    className="_8-yf5 "
     color="#262626"
     fill="#262626"
     height="24"
@@ -330,9 +330,9 @@ export const ArrowBack = (
     <line
       fill="none"
       stroke="currentColor"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
       x1="2.909"
       x2="22.001"
       y1="12.004"
@@ -342,9 +342,9 @@ export const ArrowBack = (
       fill="none"
       points="9.276 4.726 2.001 12.004 9.276 19.274"
       stroke="currentColor"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
     ></polyline>
   </svg>
 );
