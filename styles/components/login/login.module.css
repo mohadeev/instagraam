@@ -1,0 +1,45 @@
+.container {
+  width: 100%;
+  background-color: #fafafa;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.main {
+  margin-top: 32px;
+  width: 935px;
+  height: 625px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+    position : relative;
+
+}
+.phone_container {
+  width: 381.141px;
+  height: 582.212px;
+  /* background: red; */
+  background-image: url("../../../public/images/bg-imges/1dc085cdb87d.png");
+  background-size: cover;
+  background-position: center;
+  margin: 0 32px 12px 0 ;
+  padding: 0;
+  object-fit: contain;
+  /* position : absolute; */
+  /* left : 70px ;  */
+}
+
+
+.input_container {
+  width: 350px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}

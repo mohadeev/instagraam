@@ -3,8 +3,11 @@ import Style from "../../styles/components/layout/index.module.css";
 import AddPost from "../body/addpost/AddPost";
 import Header from "../header/header";
 import { useSelector } from "react-redux";
-
+import Login from "./../login/Login";
+import { useRouter } from "next/router";
 const Index = ({ children }) => {
+  const Router = useRouter();
+  const { asPath } = useRouter();
   const [ScreenHeight, setScreenHeight] = useState({});
   const AddPostCondestion = useSelector(
     (state) => state.AddPostReducers.AddPostCondestion
@@ -23,11 +26,15 @@ const Index = ({ children }) => {
     FetchData();
   }, [AddPostCondestion]);
   return (
-    <main style={ScreenHeight} className={Style.main}>
-      {AddPostCondestion && <AddPost />}
-      <Header />
-      <div className={Style.children}>{children}</div>
-    </main>
+    <>
+      {asPath === "/" ? <Login /> : ""}
+
+      <main style={ScreenHeight} className={Style.main}>
+        {AddPostCondestion && <AddPost />}
+        <Header />
+        <div className={Style.children}>{children}</div>
+      </main>
+    </>
   );
 };
 

@@ -1,0 +1,122 @@
+@font-face {
+  font-family: "myFirstFont";
+  src: url("../../../../public/fonts/FontsFree-Net-DreamFlourish-DOKPR.ttf");
+}
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: auto;
+  row-gap: 10px;
+  position: relative;
+}
+
+.logo {
+  font-family: myFirstFont;
+  font-size: 50px;
+  font-weight: 100;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+.form_container {
+  width: 100%;
+  border: solid 1px #dbdbdb;
+  border-radius: 2px;
+  height: 396px;
+  margin-top: 12px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 10px 0;
+  row-gap: 26px;
+}
+.form {
+  /* height: 265px; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 5px;
+}
+.label {
+  height: 38px;
+  width: 268px;
+  background: #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: #000;
+  border: solid 1px #dbdbdb;
+  border-radius: 2px;
+  font-size: 10px;
+  padding: 0 8px;
+  margin: 0;
+  color: #8e8e8e;
+  cursor: pointer;
+  position: relative;
+}
+
+.input {
+  border: none;
+  outline: none;
+  background: #fafafa;
+  font-size: 12px;
+  width: 90%;
+}
+.show {
+  position: absolute;
+  right: 10px;
+  font-size: 14px;
+  font-weight : 600;
+  line-height : 18px;
+color : #262626;
+
+}
+.button {
+  height: 30px;
+  width: 268px;
+  border: none;
+  outline: none;
+  background-color: #b2dffc;
+  color: #fff;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.p_container {
+  height: 63px;
+  width: 100%;
+  border: solid 1px #dbdbdb;
+  border-radius: 2px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.p_container > p > b {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #0095f6;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.p_container > p {
+  font-size: 14px;
+  line-height: 18px;
+  color: #262626;
+  padding: 0;
+  margin: 0;
+}
