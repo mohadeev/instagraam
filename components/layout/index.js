@@ -27,7 +27,6 @@ const Index = ({ children }) => {
   }, [AddPostCondestion]);
   return (
     <>
-      {asPath === "/" ? <Login /> : ""}
 
       <main style={ScreenHeight} className={Style.main}>
         {AddPostCondestion && <AddPost />}

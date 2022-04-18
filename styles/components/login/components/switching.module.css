@@ -1,0 +1,140 @@
+@font-face {
+  font-family: "myFirstFont";
+  src: url("../../../../public/fonts/FontsFree-Net-DreamFlourish-DOKPR.ttf");
+}
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: auto;
+  row-gap: 10px;
+  position: relative;
+}
+
+.logo {
+  font-family: myFirstFont;
+  font-size: 50px;
+  font-weight: 100;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+.form_container {
+  width: 100%;
+  border: solid 1px #dbdbdb;
+  border-radius: 2px;
+  height: 329px;
+  margin-top: 12px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 0;
+  /* row-gap: 26px; */
+}
+.form {
+  /* height: 265px; */
+  width: 318px;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 5px;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+  padding: 20px 0;
+  height : 130px;
+}
+.user_container {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 10px;
+}
+.image {
+  background-image: url("../../../../public/images/user_background.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 36px;
+  height: 36px;
+}
+.username {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #262626;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.button {
+  position: absolute;
+  right: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  height: 30px;
+  width: 59.79px;
+  background-color: #0095f6;
+  color: #fff;
+}
+
+.first_p_container {
+  height: 63px;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #0095f6;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.p_container {
+  height: 63px;
+  width: 100%;
+  border: solid 1px #dbdbdb;
+  border-radius: 2px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.p_container > p > b {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #0095f6;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.p_container > p {
+  font-size: 14px;
+  line-height: 18px;
+  color: #262626;
+  padding: 0;
+  margin: 0;
+}

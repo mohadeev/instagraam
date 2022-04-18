@@ -2,23 +2,37 @@ import React, { useEffect, useRef, useState } from "react";
 import Style from "../../../styles/components/login/components/inputlogin.module.css";
 import ForgetPass from "./ForgetPass";
 
-const LoginInput = () => {
+const SingUpInputs = () => {
   const ButtonLogIn = useRef<HTMLDivElement>(null);
 
   const [EmailInput, setEmailInput] = useState("");
   const [Show, setShow] = useState(true);
-
+  const [FullName, setFullName] = useState("");
   const [PassInput, setPassInput] = useState("");
+  const [Username, setUsername] = useState("")
+
   const PassChange = (event: any) => {
     setPassInput(event.target.value);
   };
   const EmailChange = (event: any) => {
     setEmailInput(event.target.value);
   };
+  const FullNameChange = (event: any) => {
+    setFullName(event.target.value);
+  };
+   const UsernameChange = (event: any) => {
+     setUsername(event.target.value);
+   };
   useEffect(() => {
     const localFun = () => {
       if (ButtonLogIn.current != null || ButtonLogIn.current != undefined) {
-        if (EmailInput.length >= 2 && PassInput.length >= 6) {
+        if (
+          FullName.length >= 4 &&
+          Username.length >= 4 &&
+          EmailInput.includes("@") &&
+          EmailInput.length >= 2 &&
+          PassInput.length >= 6
+        ) {
           ButtonLogIn.current.style.backgroundColor = "#0095F6";
         } else if (EmailInput.length < 2 || PassInput.length < 6) {
           ButtonLogIn.current.style.backgroundColor = "#b2dffc";
@@ -33,10 +47,30 @@ const LoginInput = () => {
         <h5 className={Style.logo}>Instagraam</h5>
         <form className={Style.form}>
           <label className={Style.label}>
-            {EmailInput !== "" && "Phone number, username, or email"}
+            {EmailInput !== "" && "Phone Number Email"}
             <input
               onChange={EmailChange}
-              placeholder="Phone number, username, or email"
+              placeholder="Phone Number Email"
+              className={Style.input}
+              type="text"
+              name="first_name"
+            />
+          </label>
+          <label className={Style.label}>
+            {FullName !== "" && "Full Name"}
+            <input
+              onChange={FullNameChange}
+              placeholder="Full Name"
+              className={Style.input}
+              type="text"
+              name="first_name"
+            />
+          </label>
+          <label className={Style.label}>
+            {Username !== "" && "Username"}
+            <input
+              onChange={UsernameChange}
+              placeholder="Username"
               className={Style.input}
               type="text"
               name="first_name"
@@ -62,20 +96,19 @@ const LoginInput = () => {
           </label>
           <input
             ref={ButtonLogIn}
-            value="Log in "
+            value="Next"
             className={Style.button}
             type="submit"
           />
         </form>
-        <ForgetPass />
       </div>
       <div className={Style.p_container}>
         <p>
-          <span>Don't have an account?</span> <b>Sign up</b>{" "}
+          <span>Have an account?</span> <b>Log in </b>{" "}
         </p>
       </div>
     </div>
   );
 };
 
-export default LoginInput;
+export default SingUpInputs;
