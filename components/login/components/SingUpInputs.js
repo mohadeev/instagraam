@@ -3,26 +3,26 @@ import Style from "../../../styles/components/login/components/inputlogin.module
 import ForgetPass from "./ForgetPass";
 
 const SingUpInputs = () => {
-  const ButtonLogIn = useRef<HTMLDivElement>(null);
+  const ButtonLogIn = useRef < HTMLDivElement > null;
 
   const [EmailInput, setEmailInput] = useState("");
   const [Show, setShow] = useState(true);
   const [FullName, setFullName] = useState("");
   const [PassInput, setPassInput] = useState("");
-  const [Username, setUsername] = useState("")
+  const [Username, setUsername] = useState("");
 
-  const PassChange = (event: any) => {
+  const PassChange = (event) => {
     setPassInput(event.target.value);
   };
-  const EmailChange = (event: any) => {
+  const EmailChange = (event) => {
     setEmailInput(event.target.value);
   };
-  const FullNameChange = (event: any) => {
+  const FullNameChange = (event) => {
     setFullName(event.target.value);
   };
-   const UsernameChange = (event: any) => {
-     setUsername(event.target.value);
-   };
+  const UsernameChange = (event) => {
+    setUsername(event.target.value);
+  };
   useEffect(() => {
     const localFun = () => {
       if (ButtonLogIn.current != null || ButtonLogIn.current != undefined) {
