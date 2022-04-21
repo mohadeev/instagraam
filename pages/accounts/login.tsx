@@ -15,8 +15,6 @@ const LoginIndex = () => {
       <div className={Style.second_container}>
         <SingUpInputs />
       </div>
-      
-      
     </div>
   );
 };
