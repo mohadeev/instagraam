@@ -89,7 +89,7 @@ const LoginInput = () => {
       </div>
       <div className={Style.p_container}>
         <p>
-          <span>Don't have an account?</span>{" "}
+          <span>Don&apos;t have an account?</span>{" "}
           <b onClick={HandelSingUp}>Sign up</b>{" "}
         </p>
       </div>
