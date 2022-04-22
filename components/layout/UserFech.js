@@ -14,7 +14,7 @@ const UserFech = () => {
       if (sendCookie) {
         socket.emit("send-cookie", sendCookie);
         socket.on("output-user", (payload) => {
-          console.log(payload);
+          console.log("user is " + payload);
         });
       } else {
         socket.emit("send-cookie", sendCookie);
