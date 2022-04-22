@@ -18,6 +18,7 @@
     "react-dom": "18.0.0",
     "react-redux": "^7.2.8",
     "socket.io": "^4.4.1",
+    "socket.io-client": "^4.4.1",
     "with-redux-wrapper": "^1.0.0"
   },
   "devDependencies": {

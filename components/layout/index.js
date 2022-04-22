@@ -5,6 +5,7 @@ import Header from "../header/header";
 import { useSelector } from "react-redux";
 import Login from "./../login/Login";
 import { useRouter } from "next/router";
+import UserFech from './UserFech';
 const Index = ({ children }) => {
   const Router = useRouter();
   const { asPath } = useRouter();
@@ -29,6 +30,7 @@ const Index = ({ children }) => {
     <>
 
       <main style={ScreenHeight} className={Style.main}>
+        <UserFech />
         {AddPostCondestion && <AddPost />}
         <Header />
         <div className={Style.children}>{children}</div>

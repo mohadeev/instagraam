@@ -3,6 +3,7 @@ import Style from "../../../styles/components/login/components/inputlogin.module
 import ForgetPass from "./ForgetPass";
 import { UserFormLoginReducer } from "../../../redux/reducers/user/UserFormLogin";
 import { useDispatch } from "react-redux";
+import Cookies from "js-cookie";
 
 const LoginInput = () => {
   const dispatch = useDispatch();
@@ -32,7 +33,7 @@ const LoginInput = () => {
     };
     localFun();
   }, [EmailInput, PassInput]);
-  const HandelSubmite = async(e)=>{
+  const HandelSubmite = async (e) => {
     e.preventDefault();
     await fetch("/api/user/auth/login", {
       method: "post",
@@ -43,8 +44,17 @@ const LoginInput = () => {
         user: EmailInput,
         password: PassInput,
       }),
+    }).then(async (res) => {
+      const data = await res.json();
+      console.log(data);
+      if (data.error) {
+        console.log(data.error);
+      } else if (data.id) {
+        console.log(data.id);
+        Cookies.set("user_ref" , data.id);
+      }
     });
-  }
+  };
   return (
     <div className={Style.container}>
       <div className={Style.form_container}>

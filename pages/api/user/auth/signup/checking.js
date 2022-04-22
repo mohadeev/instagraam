@@ -27,7 +27,11 @@ export const cheking = async (res, name, email, password, username) => {
             username: username,
           }).then((doc1) => {
             console.log("create user");
-            res.json(doc1);
+            res.json({
+              message: "your count was found succses",
+              id: doc1._id.toHexString(),
+              docment: { doc1 },
+            });
           });
         }
       });
