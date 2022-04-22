@@ -7,6 +7,7 @@ const UserFech = () => {
   useEffect(() => {
     const fetchData = async () => {
       const basurl = process.env.NEXT_PUBLIC_ANALYTICS_ID;
+      console.log(basurl);;
       socket = io();
       socket.connect();
       await fetch(`${basurl}/api/user/auth/login/sending`);
