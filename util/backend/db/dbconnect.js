@@ -1,7 +1,6 @@
 import mongoose from "mongoose";
 
-const connnection: { [key: string]: any } = {
-};
+const connnection = {};
 const conectUrl =
   "mongodb+srv://admin:zJMmrG0y6DqSy0or@cluster0.6ucyp.mongodb.net/instagraam?retryWrites=true&w=majority";
 
@@ -17,7 +16,6 @@ const dbConnect = async () => {
   //
 
   connnection.isConnected = db.connections[0].readyState;
-
 };
 
 export default dbConnect;
