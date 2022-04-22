@@ -1,15 +1,21 @@
 import React, { useEffect, useRef, useState } from "react";
 import Style from "../../../styles/components/login/components/inputlogin.module.css";
 import ForgetPass from "./ForgetPass";
+import { UserFormLoginReducer } from "../../../redux/reducers/user/UserFormLogin";
+import { useDispatch } from "react-redux";
 
 const SingUpInputs = () => {
-  const ButtonLogIn = useRef < HTMLDivElement > null;
-
+  const ButtonLogIn = useRef();
   const [EmailInput, setEmailInput] = useState("");
   const [Show, setShow] = useState(true);
   const [FullName, setFullName] = useState("");
   const [PassInput, setPassInput] = useState("");
   const [Username, setUsername] = useState("");
+
+  const dispatch = useDispatch();
+  const HandelLogin = () => {
+    dispatch(UserFormLoginReducer({ value: "switch" }));
+  };
 
   const PassChange = (event) => {
     setPassInput(event.target.value);
@@ -41,11 +47,26 @@ const SingUpInputs = () => {
     };
     localFun();
   }, [EmailInput, PassInput]);
+  const HandelSubmite = async (e) => {
+    e.preventDefault();
+    await fetch("/api/user/auth/signup", {
+      method: "post",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify({
+        name: FullName,
+        email: EmailInput,
+        password: PassInput,
+        username: Username,
+      }),
+    });
+  };
   return (
     <div className={Style.container}>
       <div className={Style.form_container}>
         <h5 className={Style.logo}>Instagraam</h5>
-        <form className={Style.form}>
+        <form onSubmit={HandelSubmite} className={Style.form}>
           <label className={Style.label}>
             {EmailInput !== "" && "Phone Number Email"}
             <input
@@ -104,7 +125,7 @@ const SingUpInputs = () => {
       </div>
       <div className={Style.p_container}>
         <p>
-          <span>Have an account?</span> <b>Log in </b>{" "}
+          <span>Have an account?</span> <b onClick={HandelLogin}>Log in </b>{" "}
         </p>
       </div>
     </div>

@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/login/Login.tsx", "components/login/components/SingUpInputs.js", "pages/accounts/login.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/login/Login.tsx", "components/login/components/SingUpInputs.js", "pages/accounts/login.js", "redux/reducers/user/UserFormLogin.js", "components/login/components/Switching.js", "components/login/components/LoginInput.js", "pages/api/user/auth/signup/index.js"],
   "exclude": ["node_modules"]
 }

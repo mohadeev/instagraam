@@ -4,11 +4,11 @@ const initialState = {
 };
 
 export const UserFormLogin = createSlice({
-  name: "login",
+  name: "login-forms",
   initialState,
   reducers: {
     UserFormLoginReducer: (state, action) => {
-      state.SharedWord = action.payload;
+      state.SharedWord = action.payload.value;
     },
   },
 });

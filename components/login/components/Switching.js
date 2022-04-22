@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Style from "../../../styles/components/login/components/switching.module.css";
-
+import { UserFormLoginReducer } from "../../../redux/reducers/user/UserFormLogin";
+import { useDispatch } from "react-redux";
 const User = () => {
   return (
     <div className={Style.user_container}>
@@ -11,6 +12,13 @@ const User = () => {
   );
 };
 const SingUpInputs = () => {
+  const dispatch = useDispatch();
+  const HandelLogin = () => {
+    dispatch(UserFormLoginReducer({ value: "login" }));
+  };
+  const HandelSingUp = () => {
+    dispatch(UserFormLoginReducer({ value: "singup" }));
+  };
   return (
     <div className={Style.container}>
       <div className={Style.form_container}>
@@ -20,15 +28,13 @@ const SingUpInputs = () => {
           <User />
         </div>
         <div className={Style.first_p_container}>
-        
           <b>Mange accounts </b>
-        
-      </div>
+        </div>
       </div>
       <div className={Style.p_container}>
         <p>
-          <b>Switch account </b>
-          <span> or </span> <b>Sign up</b>{" "}
+          <b onClick={HandelLogin}>Switch account </b>
+          <span> or </span> <b onClick={HandelSingUp}>Sign up</b>{" "}
         </p>
       </div>
     </div>
